@@ -229,7 +229,7 @@ if __name__ == "__main__":
     exp.grid(row=6, column=3)
 
     mod = Button(gui, text='mod', fg='black', bg='#F4F4F4', 
-                  command=idk, height=3, width=10) 
+                  command=lambda: press("%"), height=3, width=10) 
     mod.grid(row=6, column=4)
 
     #row 7
@@ -255,7 +255,7 @@ if __name__ == "__main__":
 
     #row 8
     power = Button(gui, text='x^y', fg='black', bg='#F4F4F4', 
-                     command=lambda: press('^'), height=3, width=10) 
+                     command=lambda: press('**'), height=3, width=10) 
     power.grid(row=8, column=0)
 
     button7 = Button(gui, text=' 7 ', fg='black', bg='#F4F4F4', 
